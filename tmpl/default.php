@@ -36,7 +36,6 @@ defined('_JEXEC') or die;
             foreach ($items as $item) {
                 ?>
                 <li><a href="<?= $item['link'] ?>"><?= $item['title'] ?></a>
-
                     <div class="uk-badge uk-float-right"><?= $item['number'] ?></div>
                 </li>
             <?php }
