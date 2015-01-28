@@ -25,6 +25,20 @@ defined('_JEXEC') or die;
 	<?php echo $module->content;?>
     <ul class="uk-list uk-list-space">
     <?php
+    if($params->get('show_newgames')) {
+        foreach ($list['new'] as $category) {
+            ?>
+            <li><a href="<?= $category['link'] ?>"><?= $category['title'] ?></a>
+
+                <div class="uk-badge uk-float-right"><?= $category['number'] ?></div>
+            </li>
+        <?php }
+    }
+
+    if($params->get('show_newgames')) {
+        ?><hr /><?php
+    }
+
     if($params->get('show_categories')) {
         foreach ($list['categories'] as $category) {
             ?>
