@@ -2,6 +2,7 @@
 
 ### 2.0.0 (Januar 28, 2015)
 
+  - Display of 'new games' link (optional)
   - Display of age-categories (optional)
   - Display of genres (optional)
 
