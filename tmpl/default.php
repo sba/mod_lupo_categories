@@ -25,56 +25,23 @@ defined('_JEXEC') or die;
 	<?php echo $module->content;?>
     <ul class="uk-list uk-list-space">
     <?php
-    if($params->get('show_newgames')) {
-        foreach ($list['new'] as $category) {
-            ?>
-            <li><a href="<?= $category['link'] ?>"><?= $category['title'] ?></a>
+    $seperator=false;
+    foreach($list as $section => $items) {
 
-                <div class="uk-badge uk-float-right"><?= $category['number'] ?></div>
-            </li>
-        <?php }
+        if ($params->get('show_'.$section)) {
+            if ($seperator) {?>
+                <hr/><?php
+            }
+            $seperator=true;
+            foreach ($items as $item) {
+                ?>
+                <li><a href="<?= $item['link'] ?>"><?= $item['title'] ?></a>
+
+                    <div class="uk-badge uk-float-right"><?= $item['number'] ?></div>
+                </li>
+            <?php }
+        }
     }
-
-    if($params->get('show_newgames')) {
-        ?><hr /><?php
-    }
-
-    if($params->get('show_categories')) {
-        foreach ($list['categories'] as $category) {
-            ?>
-            <li><a href="<?= $category['link'] ?>"><?= $category['title'] ?></a>
-
-                <div class="uk-badge uk-float-right"><?= $category['number'] ?></div>
-            </li>
-        <?php }
-    }
-
-    if($params->get('show_categories') && $params->get('show_agecategories')) {
-        ?><hr /><?php
-    }
-
-    if($params->get('show_agecategories')) {
-        foreach ($list['agecategories'] as $category) {
-            ?>
-            <li><a href="<?= $category['link'] ?>"><?= $category['title'] ?></a>
-
-                <div class="uk-badge uk-float-right"><?= $category['number'] ?></div>
-            </li>
-        <?php }
-    }
-
-    if(($params->get('show_categories') || $params->get('show_agecategories')) && $params->get('show_genres')) {
-        ?><hr /><?php
-    }
-
-    if($params->get('show_genres')) {
-        foreach ($list['genres'] as $category) {
-            ?>
-            <li><a href="<?= $category['link'] ?>"><?= $category['title'] ?></a>
-
-                <div class="uk-badge uk-float-right"><?= $category['number'] ?></div>
-            </li>
-        <?php }
-    }?>
+    ?>
     </ul>
 </div>
