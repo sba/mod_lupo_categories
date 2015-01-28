@@ -47,6 +47,20 @@ defined('_JEXEC') or die;
                 <div class="uk-badge uk-float-right"><?= $category['number'] ?></div>
             </li>
         <?php }
+    }
+
+    if(($params->get('show_categories') || $params->get('show_agecategories')) && $params->get('show_genres')) {
+        ?><hr /><?php
+    }
+
+    if($params->get('show_genres')) {
+        foreach ($list['genres'] as $category) {
+            ?>
+            <li><a href="<?= $category['link'] ?>"><?= $category['title'] ?></a>
+
+                <div class="uk-badge uk-float-right"><?= $category['number'] ?></div>
+            </li>
+        <?php }
     }?>
     </ul>
 </div>

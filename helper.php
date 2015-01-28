@@ -34,6 +34,8 @@ class ModLupoCategoriesHelper
         $model = & new LupoModelLupo();
         $categories = $model->getCategories();
         $agecategories = $model->getAgecategories();
-        return array('categories'=>$categories, 'agecategories'=>$agecategories);
+        $genres = $model->getGenres();
+
+        return array('categories'=>$categories, 'agecategories'=>$agecategories, 'genres'=>$genres);
 	}
 }
