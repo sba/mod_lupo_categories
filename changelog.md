@@ -1,8 +1,9 @@
 # Changelog
 
-### 2.0.0 (Januar 27, 2015)
+### 2.0.0 (Januar 28, 2015)
 
   - Display of age-categories (optional)
+  - Display of genres (optional)
 
 ### 1.1.0 (Januar 26, 2015)
 
