@@ -28,7 +28,7 @@ defined('_JEXEC') or die;
     $seperator=false;
     foreach($list as $section => $items) {
 
-        if ($params->get('show_'.$section)) {
+        if ($params->get('show_'.$section) && $items!=false) {
             if ($seperator) {?>
                 <hr/><?php
             }
