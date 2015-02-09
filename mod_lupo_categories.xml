@@ -20,7 +20,7 @@
 		<filename module="mod_lupo_categories">mod_lupo_categories.php</filename>
 		<filename>index.html</filename>
         <filename>helper.php</filename>
-        <filename>changelog.md</filename>
+        <filename>CHANGELOG.md</filename>
 		<folder>tmpl</folder>
 	</files>
 	<languages>
