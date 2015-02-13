@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.0.1 (February 13, 2015)
+
+  - Added option to hide number badge
+  
 ### 2.0.0 (Januar 28, 2015)
 
   - Display of 'new games' link (optional)

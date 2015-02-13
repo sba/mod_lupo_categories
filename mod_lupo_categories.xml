@@ -35,6 +35,15 @@
 		<fields name="params">
 			<fieldset name="options" label="COM_MODULES_BASIC_FIELDSET_LABEL">
 				<field
+					name="show_number"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_LUPO_CATEGORIES_SHOW_NUMBER" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
 					name="show_newgames"
 					type="radio"
 					class="btn-group btn-group-yesno"
