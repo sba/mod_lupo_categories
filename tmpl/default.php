@@ -16,7 +16,7 @@ defined('_JEXEC') or die;
     }
     /* for optional module-class suffix*/
     .lupo-icon-dice h3 {
-        background: url("<?=JURI::base()?>/media/com_lupo/images/dice-16px.png") no-repeat 0 5px;
+        background: url("<?php echo JURI::base()?>/media/com_lupo/images/dice-16px.png") no-repeat 0 5px;
         padding-left: 20px;
     }
 </style>
@@ -37,9 +37,9 @@ defined('_JEXEC') or die;
             $seperator=true;
             foreach ($items as $item) {
                 ?>
-                <li><a href="<?= $item['link'] ?>"><?= $item['title'] ?></a>
+                <li><a href="<?php echo  $item['link'] ?>"><?php echo  $item['title'] ?></a>
                     <?php if($show_number=="1"){?>
-                    <div class="uk-badge uk-float-right"><?= $item['number'] ?></div>
+                    <div class="uk-badge uk-float-right"><?php echo  $item['number'] ?></div>
                     <?php } ?>
                 </li>
             <?php }
