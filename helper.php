@@ -40,7 +40,8 @@ class ModLupoCategoriesHelper
 		if($newgames[0]['number']==0){
 			$newgames=false;
 		}
-		
-        return array('newgames'=>$newgames, 'categories'=>$categories, 'agecategories'=>$agecategories, 'genres'=>$genres);
+
+        $return = array('newgames'=>$newgames, 'categories'=>$categories, 'agecategories'=>$agecategories, 'genres'=>$genres);
+        return $return;
 	}
 }
