@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.0.2 (March 25, 2015)
+
+  - Bugfix php notice
+  
 ### 2.0.1 (February 13, 2015)
 
   - Added option to hide number badge
