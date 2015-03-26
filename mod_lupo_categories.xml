@@ -121,9 +121,4 @@
 			</fieldset>
 		</fields>
 	</config>
-
-	<updateservers>
-		<server type="module" priority="1" name="LUPO">http://localhost/update_mod_lupo_categories.xml</server>
-	</updateservers>
-
 </extension>
