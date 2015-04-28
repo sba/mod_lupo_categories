@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.3.0 (April, 28 2015)
+
+  - Version sync
+  
 ### 2.0.2 (March 25, 2015)
 
   - Bugfix php notice
