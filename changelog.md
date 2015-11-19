@@ -1,6 +1,10 @@
 # Changelog
 
-### 2.3.0 (April, 28 2015)
+### 2.6.0 (November 19, 2015)
+
+  - Version sync
+
+### 2.3.0 (April 28, 2015)
 
   - Version sync
   
