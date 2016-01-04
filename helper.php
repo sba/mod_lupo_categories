@@ -31,7 +31,7 @@ class ModLupoCategoriesHelper
             JLoader::import( 'lupo', JPATH_BASE . '/components/com_lupo/models' );
         }
 
-        $model = & new LupoModelLupo();
+        $model = new LupoModelLupo();
         $newgames = $model->getCategoryNew();
         $categories = $model->getCategories(false);
         $agecategories = $model->getAgecategories(false);
