@@ -78,6 +78,11 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+				<field
+						name="filter_genres"
+						type="textarea" rows="3"
+						label="MOD_LUPO_CATEGORIES_FILTER_GENRES"
+						description="MOD_LUPO_CATEGORIES_FILTER_GENRES_DESC" />
 			</fieldset>
 			<fieldset
 				name="advanced">

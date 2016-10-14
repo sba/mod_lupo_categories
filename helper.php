@@ -37,6 +37,19 @@ class ModLupoCategoriesHelper
         $agecategories = $model->getAgecategories(false);
         $genres = $model->getGenres();
 
+        //filter genres
+		$filter_param = $params->get('filter_genres', "");
+		if($filter_param!=""){
+			$filter_genres = explode("\r\n",$filter_param);
+
+			foreach($genres as $genre){
+				if(in_array($genre['title'], $filter_genres)){
+					$genres_new[] = $genre;
+				}
+			}
+			$genres = $genres_new;
+		}
+
 		if($newgames[0]['number']==0){
 			$newgames=false;
 		}
