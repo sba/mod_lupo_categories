@@ -22,7 +22,7 @@ defined('_JEXEC') or die;
 </style>
 
 <div class="mod_lupo_categories <?php echo $moduleclass_sfx ?>">
-	<?php echo $module->content;?>
+	<?php echo JHtml::_('content.prepare', $module->content);?>
     <ul class="uk-list uk-list-space">
     <?php
     $show_number = $params->get('show_number','1');
