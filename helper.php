@@ -33,8 +33,8 @@ class ModLupoCategoriesHelper
 
         $model = new LupoModelLupo();
         $newgames = $model->getCategoryNew();
-        $categories = $model->getCategories(false);
-        $agecategories = $model->getAgecategories(false);
+        $categories = $model->getCategories(false, false);
+        $agecategories = $model->getAgecategories(false, false);
         $genres = $model->getGenres();
 
         //filter genres
