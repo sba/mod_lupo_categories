@@ -43,11 +43,15 @@ class ModLupoCategoriesHelper
 			$filter_genres = explode("\r\n",$filter_param);
 
 			$genres_new = array();
-			foreach($genres as $genre){
-				if(in_array($genre['title'], $filter_genres)){
-					$genres_new[] = $genre;
-				}
-			}
+            $genres_title = array_column($genres, "title");
+            foreach($filter_genres as $filter_genre){
+                if(in_array($filter_genre, $genres_title)){
+                    foreach($genres as $genre){
+                        if($filter_genre==$genre['title']){
+                            $genres_new[] = $genre;
+                        }
+                    }
+                }
 			$genres = $genres_new;
 		}
 
