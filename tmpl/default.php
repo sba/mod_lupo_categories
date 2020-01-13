@@ -36,13 +36,16 @@ defined('_JEXEC') or die;
             }
             $seperator=true;
             foreach ($items as $item) {
-                ?>
-                <li><a href="<?php echo  $item['link'] ?>"><?php echo  $item['title'] ?></a>
-                    <?php if($show_number=="1"){?>
-                    <div class="uk-badge uk-float-right"><?php echo  $item['number'] ?></div>
-                    <?php } ?>
-                </li>
-            <?php }
+                if ($item == '-') { ?>
+                    <hr/>
+                <?php } else { ?>
+                    <li><a href="<?php echo $item['link'] ?>"><?php echo $item['title'] ?></a>
+                        <?php if ($show_number == "1") { ?>
+                            <div class="uk-badge uk-float-right"><?php echo $item['number'] ?></div>
+                        <?php } ?>
+                    </li>
+                <?php }
+            }
         }
     }
     ?>

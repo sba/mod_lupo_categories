@@ -52,6 +52,11 @@ class ModLupoCategoriesHelper
                         }
                     }
                 }
+                if($filter_genre=='-'){
+                    $genres_new[] = '-';
+                }
+            }
+
 			$genres = $genres_new;
 		}
 
