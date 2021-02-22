@@ -26,6 +26,7 @@ defined('_JEXEC') or die;
     <ul class="uk-list uk-list-space">
     <?php
     $show_number = $params->get('show_number','1');
+    $show_number_class = $params->get('show_number_class','uk-badge');
 
     $seperator=false;
     foreach($list as $section => $items) {
@@ -41,7 +42,7 @@ defined('_JEXEC') or die;
                 <?php } else { ?>
                     <li><a href="<?php echo $item['link'] ?>"><?php echo $item['title'] ?></a>
                         <?php if ($show_number == "1") { ?>
-                            <div class="uk-badge uk-float-right"><?php echo $item['number'] ?></div>
+                            <div class="<?php echo $show_number_class?> uk-float-right"><?php echo $item['number'] ?></div>
                         <?php } ?>
                     </li>
                 <?php }

@@ -5,12 +5,12 @@
 	client="site">
 	<name>mod_lupo_categories</name>
 	<author>Stefan Bauer</author>
-	<creationDate>November 2020</creationDate>
+	<creationDate>February 2021</creationDate>
 	<copyright>Copyright (C) databauer / Stefan Bauer</copyright>
 	<license>License GNU General Public License version 2 or later</license>
 	<authorEmail>stefan@databauer.ch</authorEmail>
 	<authorUrl>https://www.ludothekprogramm.ch</authorUrl>
-	<version>3.41.0</version>
+	<version>3.42.0</version>
 	<description>MOD_LUPO_CATEGORIES_XML_DESCRIPTION</description>
 
 	<customContent />
@@ -41,6 +41,13 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
+				<field
+					name="show_number_class"
+					type="text"
+					label="MOD_LUPO_CATEGORIES_SHOW_NUMBER_CLASS"
+					default="uk-badge"
+					showon="show_number:1"
+				/>
 				<field
 					name="show_newgames"
 					type="radio"
