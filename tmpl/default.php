@@ -3,7 +3,7 @@
  * @package     Joomla.Site
  * @subpackage  mod_lupo_categories
  *
- * @copyright   Copyright (C) databauer / Stefan Bauer 
+ * @copyright   Copyright (C) databauer / Stefan Bauer
  * @license     GNU General Public License version 2 or later
  */
 
